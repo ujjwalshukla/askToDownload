@@ -1,0 +1,51 @@
+ul {
+	margin: 20px;
+	list-style: none;
+}
+
+.postTitle a {
+	text-decoration: none;
+}
+.postCreated {
+	display: inline-block;
+	float: right;
+}
+.createBtn {
+	width: 150px;
+	margin: 0px auto;
+}
+.s-center {
+	margin: 0px auto;
+}
+.blk4 {
+	width: 40%;
+}
+.inputBox {
+	width: 100%;
+}
+.submit {
+	margin: 0px auto;
+	display: block;
+}
+.postTime {
+	float: right;
+	font-size: 12px;
+}
+.postBody {
+	width: 80%;
+	margin: 0px auto;
+	padding: 30px;
+}
+.commentBody {
+	width: 80%;
+	margin: 0px auto;
+	padding: 10px;
+}
+.closed {
+	text-decoration: line-through;
+	color: red;
+}
+
+.closed-Button {
+	visibility: hidden;
+}

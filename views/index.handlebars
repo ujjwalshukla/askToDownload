@@ -1,0 +1,46 @@
+<header>
+	<h1 class="jumbotron">{{title}}</h1>
+</header>
+<hr/>
+<section>
+	<table class="table">
+		<thead>
+			<tr>
+				<th class="col-md-3">
+					Titles
+				</th>
+				<th class="col-md-3">
+					Initiated By
+				</th>
+				<th class="col-md-3">
+					Downloaded By
+				</th>
+				<th class="col-md-3">
+					Modified At
+				</th>
+			</tr>
+		</thead>
+		<tbody>
+			{{#each posts}}
+				<tr>
+					<td class="col-md-3">
+						<a href="/{{slug}}" class="{{completedStat}}">{{title}}</a>
+					</td>
+					<td class="col-md-3">
+						<a href="/{{slug}}" class="{{completedStat}}">{{initiatedBy}}</a>
+					</td>
+					<td class="col-md-3">
+						<a href="/{{slug}}">{{downloadedBy}}</a>
+					</td>
+					<td class="col-md-3">
+						{{modified_at}}
+					</td>
+				</tr>
+			{{/each}}
+		</tbody>
+	</table>
+	<hr/>
+	<div class="createBtn">
+		<a href="/new" class="btn btn-lg btn-primary">Create New Request</a>
+	</div>
+</section>
